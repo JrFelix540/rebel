@@ -18,7 +18,12 @@ const ContactPage: React.FC = () => {
   }
   return (
     <PageContainer>
-      <form onSubmit={handleSubmit}>
+      <form
+        onSubmit={handleSubmit}
+        name="contact"
+        method="POST"
+        data-netlify="true"
+      >
         <input name="email" onChange={handleChange} value={email} />
         <button type="submit">Send Stuff</button>
       </form>
